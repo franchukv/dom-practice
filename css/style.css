@@ -365,10 +365,18 @@ body {
 }
 
 @media (max-width: 767px) {
-    .cards__item {
+
+    .menu:not(.side-menu) .cards__item {
         margin-bottom: 15px;
         flex-basis: 49%;
         width: 49%;
+    }
+
+
+    .menu:not(.side-menu) .cards__item:first-child,
+    .menu:not(.side-menu) .cards__item:last-child {
+        width: 100%;
+        flex-basis: 100%;
     }
 
     .cards__title {
